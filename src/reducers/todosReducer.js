@@ -2,6 +2,7 @@
 const defaultData = {
     isFetching: false,
     data: [],
+    courseDetail: {},
 };
 
 const todos = (state = defaultData, action) => {
@@ -31,6 +32,17 @@ const todos = (state = defaultData, action) => {
                 ...state,
                 isFetching: false,
                 data: action.payload
+            };
+        case 'FETCH_COURSE_BY_ID':
+            console.log('state FETCH_COURSE_BY_ID');
+            console.log(state);
+            return {
+                ...state,
+                isFetching: false,
+                courseDetail: {
+                    ...state.data[action.payload.courseId],
+                    id: action.payload.courseId,
+                },
             };
         default:
             return state

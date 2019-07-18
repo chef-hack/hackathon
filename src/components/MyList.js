@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Loader from 'react-loader-spinner'
 import { connect } from 'react-redux';
 import _ from 'lodash';
+import { Link } from 'react-router-dom'
 import { Button } from 'react-bootstrap';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 import { simpleAction } from '../actions/simpleAction';
@@ -85,9 +86,11 @@ class MyList extends Component {
                     <div className="column id">{item.id}</div>
                     <div className="column title">{item.title}</div>
                     <div className="column description">{item.description}</div>
-                    <div className="column link">{item.link}</div>
-                    <div className="column action"><Button onClick={()=> this.removeCourse(item.id)}>Remove</Button></div>
-                    <div className="column action"><Button onClick={()=> this.updateToDo(item)}>Update</Button></div>
+                    <div className="column link"><Link to={'/course/' + item.id}>Detail</Link></div>
+                    <div className="column action">
+                        <Button onClick={()=> this.removeCourse(item.id)}>Remove</Button>
+                        <Button onClick={()=> this.updateToDo(item)}>Update</Button>
+                    </div>
             </div>
             )
         );
@@ -110,6 +113,7 @@ class MyList extends Component {
                             <div className="header">Name</div>
                             <div className="header">Description</div>
                             <div className="header">Link</div>
+                            <div className="header">Action</div>
                         </div>
                             <div className="content">
                                 {this.renderRow()}
