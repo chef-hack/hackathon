@@ -7,18 +7,19 @@ import About from './containers/About';
 import logo from './logo.svg';
 import './App.css';
 import {fetchToDos} from "./actions/todoAction";
+import NavBar from './components/NavBar';
 
 class App extends Component {
     simpleAction = (event) => {
         this.props.simpleAction();
         this.props.fetchToDos();
-    };
+    }
 
     render = () => {
         return (
             <Router>
                 <div>
-                    <button onClick={this.simpleAction}>Test redux action</button>
+                    <NavBar />
                     <Route exact path="/" component={Home}/>
                     <Route path="/about" component={About}/>
                 </div>

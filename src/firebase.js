@@ -1,5 +1,11 @@
 import * as firebase from 'firebase';
 var firebaseConfig = {
+    // apiKey: "AIzaSyA21E8beG20N75_LYoOiMFcv-zbrR03QiY",
+    // authDomain: "boss-bitch.firebaseapp.com",
+    // databaseURL: "https://boss-bitch.firebaseio.com",
+    // projectId: "boss-bitch",
+    // storageBucket: "boss-bitch.appspot.com",
+    // messagingSenderId: "950209419705",
     apiKey: "AIzaSyDP5SzoK807olNiMALmChLXhxFZZsMoDT8",
     authDomain: "hackathon-c73af.firebaseapp.com",
     databaseURL: "https://hackathon-c73af.firebaseio.com",
@@ -10,4 +16,4 @@ var firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 const databaseRef = firebase.database().ref();
-export const todosRef = databaseRef.child("todos");
+export const todosRef = databaseRef.child("courses");
