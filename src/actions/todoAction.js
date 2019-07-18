@@ -31,7 +31,6 @@ export const completeToDo = completeToDo => async dispatch => {
     todosRef.child(completeToDo).remove();
 };
 
-
 export const fetchToDos = () => async dispatch => {
     dispatch({
         type: IS_FETCHING_TODOS,
