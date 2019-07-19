@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, HashRouter, Link } from "react-router-dom";
 import { simpleAction } from './actions/simpleAction';
 import Home from './containers/HomePage';
 import UpdateCourse from './containers/UpdateCourse';
 import About from './containers/About';
-
 import Goal from './containers/Goal';
 import LeaderBoard from './containers/LeaderBoard';
 import Profile from './containers/Profile';
@@ -15,6 +14,7 @@ import logo from './logo.svg';
 import './App.css';
 import {fetchToDos} from "./actions/todoAction";
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 class App extends Component {
     simpleAction = (event) => {
@@ -25,7 +25,7 @@ class App extends Component {
     render = () => {
         return (
             <div className="container-fluid">
-                <Router>
+                <HashRouter>
                     <div>
                         <NavBar />
                         <Route exact path="/" component={HomePage}/>
@@ -35,8 +35,9 @@ class App extends Component {
                         <Route path="/leader" component={LeaderBoard}/>
                         <Route path="/profile" component={Profile}/>
                         <Route exact path="/explorer" component={Explorer}/>
+                        <Footer />
                     </div>
-                </Router>
+                </HashRouter>
             </div>
         );
     }
