@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Cup from '../goal/994796.svg';
+import Button from 'react-bootstrap/Button';
 import { NavLink } from "react-router-dom";
 import Avatar from 'react-avatar';
 import Banner from '../banner-goal.png';
@@ -39,18 +39,18 @@ class Goal extends Component {
             <div className="bg-blue">
                 <div className="container-wrap">
                     <div className="mb-5 mt-2">
-                        <NavLink exact activeClassName="active" to="/goal">
+                        <NavLink className="text-secondary text-small" exact activeClassName="active" to="/goal">
                             <span>goal</span>
                         </NavLink>
                         <span> / </span>
-                        <NavLink exact activeClassName="active" to="/leader">
+                        <NavLink className="text-secondary text-small" exact activeClassName="active" to="/leader">
                             <span>Leader board</span>
                         </NavLink>
                     </div>
                     <h1>Goal Setting</h1>
                     <div><img className="img-fluid" src={Banner}/></div>
-                    <div className="mx-5 overflow-auto">
-                        <div className="d-flex mt-3 justify-content-around">
+                    <div className="mx-5">
+                        <div className="d-flex mt-3 justify-content-around overflow-auto">
                             <div className="">
                                 <div className="goal-card">
                                     <div className="goal-img"> <img src={Img1}/></div>
@@ -129,6 +129,7 @@ class Goal extends Component {
                                 {goal5 &&<div className="d-inline"> <Avatar round size="40" name="Pat A" /> <Avatar round size="40" name="May C" /> <Avatar round size="40" name="Muey D" /></div>}
                             </div>
                         </div>
+                        <div className="text-right"><a href="https://marvelapp.com/953c4f8/screen/59445318" variant="outline-info" className="btn btn-primary">Save</a></div>
                     </div>
 
                 </div>
