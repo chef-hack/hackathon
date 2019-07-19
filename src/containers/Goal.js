@@ -37,16 +37,7 @@ class Goal extends Component {
         const { goal1, goal2, goal3, goal4, goal5 } = this.state;
         return (
             <div className="bg-blue">
-                <div className="container-wrap">
-                    <div className="mb-5 mt-2">
-                        <NavLink className="text-secondary text-small" exact activeClassName="active" to="/goal">
-                            <span>goal</span>
-                        </NavLink>
-                        <span> / </span>
-                        <NavLink className="text-secondary text-small" exact activeClassName="active" to="/leader">
-                            <span>Leader board</span>
-                        </NavLink>
-                    </div>
+                <div className="container-wrap pt-3">
                     <h1>Goal Setting</h1>
                     <div><img className="img-fluid" src={Banner}/></div>
                     <div className="mx-5">
