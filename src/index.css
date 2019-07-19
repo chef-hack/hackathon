@@ -88,5 +88,5 @@ code {
   padding-right: 5px;
 }
 .goal-tracker-img img {
-  width: 650px;
+  max-width: 100%;
 }
