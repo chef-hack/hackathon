@@ -138,6 +138,22 @@
   padding: 5px;
 }
 
+
+.each-nav {
+    height: 34px;
+    width: 100%;
+    padding: 0 31px;
+    font-size: 14px;
+}
+.each-nav a {
+    line-height: 2.5em;
+}
+.all-menu {
+    padding-top:8px;
+    box-shadow: 8px 3px 9px -3px #d6d1d1;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
 @keyframes blink{
   0%{background-color: rgba(253, 191, 20, 0.3)}
   50%{background-color: rgba(253, 191, 20, 0.5)}

@@ -48,6 +48,7 @@ class NavBar extends Component {
                                     <div className="each-nav"><a href="https://marvelapp.com/953c4f8/screen/59442047">My feed</a></div>
                                     <div className="each-nav"><Link to={'/explorer/'}>Explore feed</Link></div>
                                     <div className="each-nav"><Link to={'/goal/'}>Goal challenge</Link></div>
+                                    <div className="each-nav"><Link to={'/leader/'}>Leader board</Link></div>
                                 </div>
                             }
                         </div>
