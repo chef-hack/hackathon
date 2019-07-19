@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Logo from '../../chef.png';
 import Logo2 from '../../intelligent.png';
 import Profile from '../../profile.png';
+import Search from '../../search.png';
 
 class NavBar extends Component {
     render() {
