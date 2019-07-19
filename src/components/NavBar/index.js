@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import { Link } from 'react-router-dom'
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
@@ -15,7 +14,7 @@ class NavBar extends Component {
             <div className="nav-bar">
                 <div className="nav-content d-flex">
                     <div className="logo">
-                        <img src={Logo}/>
+                        <Link to={'/explorer/'}><img src={Logo}/></Link>
                         <img className="ml-3 mt-2" src={Logo2} width="111"/>
                     </div>
 
