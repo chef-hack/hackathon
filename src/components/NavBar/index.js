@@ -14,7 +14,7 @@ class NavBar extends Component {
             <div className="nav-bar">
                 <div className="nav-content d-flex">
                     <div className="logo">
-                        <Link to={'/explorer/'}><img src={Logo}/></Link>
+                        <Link to={'https://marvelapp.com/953c4f8/screen/59442690/'}><img src={Logo}/></Link>
                         <img className="ml-3 mt-2" src={Logo2} width="111"/>
                     </div>
 

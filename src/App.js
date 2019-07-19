@@ -8,6 +8,7 @@ import About from './containers/About';
 
 import Goal from './containers/Goal';
 import LeaderBoard from './containers/LeaderBoard';
+import Profile from './containers/Profile';
 import Explorer from './containers/Explorer';
 import logo from './logo.svg';
 import './App.css';
@@ -31,6 +32,7 @@ class App extends Component {
                         <Route path="/about" component={About}/>
                         <Route path="/goal" component={Goal}/>
                         <Route path="/leader" component={LeaderBoard}/>
+                        <Route path="/profile" component={Profile}/>
                         <Route exact path="/explorer" component={Explorer}/>
                     </div>
                 </Router>
