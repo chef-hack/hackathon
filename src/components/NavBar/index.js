@@ -45,8 +45,9 @@ class NavBar extends Component {
                                 this.state.isShowMenu &&
                                 <div className="all-menu">
                                     <div className="each-nav"><Link to={'/profile/'}>My Profile</Link></div>
+                                    <div className="each-nav"><a href="https://marvelapp.com/953c4f8/screen/59442047">My feed</a></div>
                                     <div className="each-nav"><Link to={'/explorer/'}>Explore feed</Link></div>
-                                    <div className="each-nav"><Link to={'/goal/'}>Google challenge</Link></div>
+                                    <div className="each-nav"><Link to={'/goal/'}>Goal challenge</Link></div>
                                 </div>
                             }
                         </div>

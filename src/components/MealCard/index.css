@@ -1,0 +1,48 @@
+.meal-card {
+  width: 1360px;
+  height: 538px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  -webkit-box-shadow: 1px 1px 6px 3px #ccc;
+  box-shadow: 1px 1px 6px 3px #ccc;
+}
+.meal-img {
+  float: right;
+  margin-right: 40px;
+  margin-top: 12px;
+}
+
+.meal-pic {
+  width: 425px;
+  height: 421px;
+}
+
+.meal-detail {
+  margin-top: 72px;
+  float: left;
+  height: 100%;
+  width: 50%;
+  margin-left: 40px;
+}
+
+.meal-name {
+  margin-top: 5px;
+  color: #636363;
+  font-size: 22px;
+}
+
+.meal-title {
+  margin-top: 20px;
+  color: #2b292d;
+  font-size: 56px;
+}
+
+.meal-detail {
+  font-size: 24px;
+  color: #2b292d;
+  margin-top: 30px;
+}
