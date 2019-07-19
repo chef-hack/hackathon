@@ -5,8 +5,10 @@ import { simpleAction } from './actions/simpleAction';
 import Home from './containers/Home';
 import UpdateCourse from './containers/UpdateCourse';
 import About from './containers/About';
+
 import Goal from './containers/Goal';
 import LeaderBoard from './containers/LeaderBoard';
+import Explorer from './containers/Explorer';
 import logo from './logo.svg';
 import './App.css';
 import {fetchToDos} from "./actions/todoAction";
@@ -16,7 +18,7 @@ class App extends Component {
     simpleAction = (event) => {
         this.props.simpleAction();
         this.props.fetchToDos();
-    }
+    };
 
     render = () => {
         return (
@@ -29,6 +31,7 @@ class App extends Component {
                         <Route path="/about" component={About}/>
                         <Route path="/goal" component={Goal}/>
                         <Route path="/leader" component={LeaderBoard}/>
+                        <Route exact path="/explorer" component={Explorer}/>
                     </div>
                 </Router>
             </div>

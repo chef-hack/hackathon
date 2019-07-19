@@ -17,4 +17,4 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const databaseRef = firebase.database().ref();
 export const todosRef = databaseRef.child("courses");
-export const prefRef = databaseRef.child("preference");
+export const preferencesRef = databaseRef.child("preferences");
