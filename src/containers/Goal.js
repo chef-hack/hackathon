@@ -50,7 +50,7 @@ class Goal extends Component {
                     <h1>Goal Setting</h1>
                     <div><img className="img-fluid" src={Banner}/></div>
                     <div className="mx-5 overflow-auto">
-                        <div className="d-flex mt-3">
+                        <div className="d-flex mt-3 justify-content-around">
                             <div className="">
                                 <div className="goal-card">
                                     <div className="goal-img"> <img src={Img1}/></div>

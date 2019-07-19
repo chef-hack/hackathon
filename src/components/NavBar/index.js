@@ -14,7 +14,7 @@ class NavBar extends Component {
             <div className="nav-bar">
                 <div className="nav-content d-flex">
                     <div className="logo">
-                        <Link to={'https://marvelapp.com/953c4f8/screen/59442690/'}><img src={Logo}/></Link>
+                        <a href="https://marvelapp.com/953c4f8/screen/59442047"> <img src={Logo}/></a>
                         <img className="ml-3 mt-2" src={Logo2} width="111"/>
                     </div>
 
@@ -22,7 +22,7 @@ class NavBar extends Component {
                         <div className="search mr-5">
                             <Form inline>
                                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                                <Button variant="outline-info">Search</Button>
+                                <div className="search-icon" variant="outline-info"><img src={Search} width="19px"/> </div>
                             </Form>
                         </div>
                         <div className="profile d-flex">

@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 class LeaderBoard extends Component {
     render() {
         return (
+            <div className="bg-blue">
             <div className="container-wrap">
                 <div className="mb-5 mt-2">
                     <NavLink exact activeClassName="active" to="/goal">
@@ -162,6 +163,7 @@ class LeaderBoard extends Component {
                         </tbody>
                     </table>
                 </div>
+            </div>
             </div>);
     }
 }

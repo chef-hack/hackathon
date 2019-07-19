@@ -8,10 +8,11 @@ import PieChart from '../components/PieChart';
 class Profile extends Component {
   state = {
     prefList: [
-      {"id":1, "name":"Digital"},
-      {"id":2, "name":"Culture"},
-      {"id":3, "name":"Management"},
-      {"id":4, "name":"Helpful"}
+      {"id":1, "name":"Design UX/UI"},
+      {"id":2, "name":"Digital"},
+      {"id":3, "name":"Culture"},
+      {"id":4, "name":"Management"},
+      {"id":5, "name":"Helpful"}
     ],
   };
   renderGeneralInfo() {
