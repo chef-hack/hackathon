@@ -120,9 +120,13 @@ class Goal extends Component {
                                 {goal5 &&<div className="d-inline"> <Avatar round size="40" name="Pat A" /> <Avatar round size="40" name="May C" /> <Avatar round size="40" name="Muey D" /></div>}
                             </div>
                         </div>
-                        <div className="text-right"><a href="https://marvelapp.com/953c4f8/screen/59445318" variant="outline-info" className="btn btn-primary">Save</a></div>
+
                     </div>
 
+                </div>
+                <div className="text-center">
+                    <a href="https://marvelapp.com/953c4f8/screen/59442047" variant="outline-info" className="btn btn-outline-primary">Cancel</a>
+                    <a href="https://marvelapp.com/953c4f8/screen/59445318" variant="outline-info" className="btn btn-primary">Save</a>
                 </div>
             </div>);
     }
