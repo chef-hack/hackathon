@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9461b68-d6dd-486d-90c7-6a475a0e63ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/preferenceAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AvatarCoach/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AvatarCoach/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CourseCard/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CourseCard/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DessertCard/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DessertCard/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PreferenceCard/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PreferenceCard/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Explorer/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Explorer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/todoAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/todoAction.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,9 +34,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/actions/todoAction.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/firebase.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="279">
               <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
             </state>
           </provider>
@@ -85,7 +80,6 @@
         <option value="$PROJECT_DIR$/src/reducers/todosReducer.js" />
         <option value="$PROJECT_DIR$/src/containers/UpdateCourse.js" />
         <option value="$USER_HOME$/Downloads/hackathon-c73af-export.json" />
-        <option value="$PROJECT_DIR$/src/actions/todoAction.js" />
         <option value="$PROJECT_DIR$/src/components/PreferenceCard.js" />
         <option value="$PROJECT_DIR$/src/components/PreferenceCard/PreferenceCard.js" />
         <option value="$PROJECT_DIR$/src/components/PreferenceCard/index.js" />
@@ -102,6 +96,7 @@
         <option value="$PROJECT_DIR$/src/components/PreferenceCard/index.css" />
         <option value="$PROJECT_DIR$/src/containers/Explorer/index.js" />
         <option value="$PROJECT_DIR$/src/firebase.js" />
+        <option value="$PROJECT_DIR$/src/actions/todoAction.js" />
       </list>
     </option>
   </component>
@@ -212,7 +207,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19265000" />
+    <option name="totallyTimeSpent" value="19358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -288,15 +283,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/firebase.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="279">
           <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/todoAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
@@ -440,6 +428,13 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/todoAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
         </state>
       </provider>
     </entry>

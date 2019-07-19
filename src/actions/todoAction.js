@@ -57,12 +57,12 @@ export const fetchPref = () => async dispatch => {
             isFetchingPref: true
         }
     });
-    prefRef.on("value", snapshot => {
-        console.log('snapshot.val()');
-        console.log(snapshot.val());
-        dispatch({
-            type: FETCH_PREF,
-            payload: snapshot.val()
-        });
-    });
+    // prefRef.on("value", snapshot => {
+    //     console.log('snapshot.val()');
+    //     console.log(snapshot.val());
+    //     dispatch({
+    //         type: FETCH_PREF,
+    //         payload: snapshot.val()
+    //     });
+    // });
 };
