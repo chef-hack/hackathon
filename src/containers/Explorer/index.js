@@ -153,31 +153,33 @@ class Explorer extends Component {
                             </Col>)
                         }
                     </Row>
-                    <Row>
-                        <div className="header-lower-part">
-                            Cultural Trusted by the world’s most innovative businesses – big and small
-                        </div>
-                    </Row>
-                    <Row>
-                        {
-                            filteredCourse.map((card, i) => <Col md="6"><CourseCard imgUrl={card.imgUrl}/></Col>)
-                        }
-                    </Row>
-                    <Row>
-                        <div className="header-dessert">
-                            The best course dessert
-                        </div>
-                        <div className="dessert-detail">
-                            A beautifully simple system for tracking, prioritizing, and solving customer support tickets.
-                        </div>
-                    </Row>
-                    <Row>
-                        {
-                            dessertCards.map((card, i) => <Col md="4">
-                                <DessertCard imgUrl={card.imgUrl} name={card.name} />
-                            </Col>)
-                        }
-                    </Row>
+                    <div className="result-lower">
+                        <Row>
+                            <div className="header-lower-part">
+                                Cultural Trusted by the world’s most innovative businesses – big and small
+                            </div>
+                        </Row>
+                        <Row>
+                            {
+                                filteredCourse.map((card, i) => <Col md="6"><CourseCard imgUrl={card.imgUrl}/></Col>)
+                            }
+                        </Row>
+                        <Row>
+                            <div className="header-dessert">
+                                The best course dessert
+                            </div>
+                            <div className="dessert-detail">
+                                A beautifully simple system for tracking, prioritizing, and solving customer support tickets.
+                            </div>
+                        </Row>
+                        <Row>
+                            {
+                                dessertCards.map((card, i) => <Col md="4">
+                                    <DessertCard imgUrl={card.imgUrl} name={card.name} />
+                                </Col>)
+                            }
+                        </Row>
+                    </div>
                 </div>
         );
     }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import Form from 'react-bootstrap/Form';
+import Dropdown from 'react-bootstrap/Dropdown';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import Logo from '../../chef.png';
@@ -8,7 +9,19 @@ import Logo2 from '../../intelligent.png';
 import Profile from '../../profile.png';
 import Search from '../../search.png';
 
+import './index.css';
+
 class NavBar extends Component {
+    state = {
+        isShowMenu: false,
+    };
+
+    toggleMenu = () => {
+        this.setState({
+            isShowMenu: !this.state.isShowMenu
+        });
+    };
+
     render() {
         return (
             <div className="nav-bar">
@@ -27,7 +40,15 @@ class NavBar extends Component {
                         </div>
                         <div className="profile d-flex">
                             <div className="text-right">Hi Jason Dunlop<br/><span className="text-secondary text-small">Genaral Manager</span></div>
-                            <div className="ml-3"><img className="profile-img" src={Profile}/></div>
+                            <div className="ml-3" onClick={() => this.toggleMenu()}><img className="profile-img" src={Profile}/></div>
+                            {
+                                this.state.isShowMenu &&
+                                <div className="all-menu">
+                                    <div className="each-nav"><Link to={'/profile/'}>My Profile</Link></div>
+                                    <div className="each-nav"><Link to={'/explorer/'}>Explore feed</Link></div>
+                                    <div className="each-nav"><Link to={'/goal/'}>Google challenge</Link></div>
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>

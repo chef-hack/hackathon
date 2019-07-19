@@ -98,8 +98,6 @@ class MyList extends Component {
 
     renderToDo() {
         const { todos, isFetching } = this.props;
-        console.log('---todos--');
-        console.log(todos);
         return (
             <div className="todo-list">
                 {

@@ -1,0 +1,29 @@
+.all-menu {
+  background-color: #fff;
+  position: absolute;
+  right: 100px;
+  top: 80px;
+  width: 250px;
+  z-index: 20;
+  font-size: 20px;
+}
+
+.each-nav {
+  height: 34px;
+  width: 100%;
+
+}
+
+.each-nav a {
+  color: #636363;
+  cursor: pointer;
+}
+
+.each-nav:hover {
+  background-color: #1c00fc;
+}
+
+.each-nav:hover a{
+  color: #fff;
+  text-decoration: none;
+}

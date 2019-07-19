@@ -1,8 +1,14 @@
 .filter-part {
-  background-color: #f1f8fb;
+
   margin: auto;
   display: block;
   width: 1500px;
+  margin-top: 20px;
+}
+
+.result-lower {
+  background-color: #f1f8fb;
+  margin-top: 30px;
 }
 
 .header-lower-part {
