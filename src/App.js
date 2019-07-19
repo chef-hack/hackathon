@@ -5,6 +5,7 @@ import { simpleAction } from './actions/simpleAction';
 import Home from './containers/Home';
 import UpdateCourse from './containers/UpdateCourse';
 import About from './containers/About';
+import Explorer from './containers/Explorer';
 import logo from './logo.svg';
 import './App.css';
 import {fetchToDos} from "./actions/todoAction";
@@ -23,6 +24,7 @@ class App extends Component {
                     <NavBar />
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/course/:courseId" component={UpdateCourse}/>
+                    <Route exact path="/explorer" component={Explorer}/>
                     <Route path="/about" component={About}/>
                 </div>
             </Router>

@@ -1,0 +1,42 @@
+.pref-card {
+  -webkit-box-shadow: 1px 1px 6px 3px #ccc;
+  box-shadow: 1px 1px 6px 3px #ccc;
+  width: 187px;
+  height: 215px;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #fff;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+}
+
+.pref-card:hover {
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.pref-name {
+  width: 151px;
+  margin-top: 10px;
+  margin: auto;
+  display: block;
+  font-size: 22px;
+  color: #2b292d;
+  text-align: center;
+}
+
+.pref-img {
+  margin-top: 15px;
+}
+
+.pref-img .pref-pic {
+  margin: auto;
+  width: 99px;
+  height: 140px;
+  display: block;
+}
+
+.selected-pref .pref-name {
+  text-decoration: underline;
+}

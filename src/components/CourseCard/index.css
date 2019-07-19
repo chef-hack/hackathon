@@ -1,0 +1,39 @@
+.course-card {
+  width: 557px;
+  height: 242px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+}
+.course-img {
+  float: left;
+  height: 100%;
+  width: 45%;
+}
+
+.pref-pic {
+  margin: 44px 41px 0 43px;
+  width: 163px;
+  height: 150px;
+}
+
+.course-detail {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+.course-name {
+  margin-top: 10px;
+}
+
+.course-detail {
+  font-size: 18px;
+}
+
+.avatar {
+  margin-top: 26px;
+}
