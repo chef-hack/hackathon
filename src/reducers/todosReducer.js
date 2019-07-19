@@ -1,6 +1,7 @@
 
 const defaultData = {
     isFetching: false,
+    isFetchingPref: false,
     data: [],
     courseDetail: {},
 };
@@ -43,6 +44,14 @@ const todos = (state = defaultData, action) => {
                     ...state.data[action.payload.courseId],
                     id: action.payload.courseId,
                 },
+            };
+        case 'FETCH_PREF':
+            console.log('state FETCH_PREF');
+            console.log(action.payload);
+            return {
+                ...state,
+                isFetchingPref: false,
+                data: action.payload
             };
         default:
             return state
