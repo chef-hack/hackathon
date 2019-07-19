@@ -79,15 +79,15 @@
   margin-bottom: 50px;
 }
 .range-table {
-  border: 4px solid #fdbf14;
-  border-radius: 30px;
+  border: 4px solid #3366ff;
+  border-radius: 20px;
   width: 70%;
   margin: 0 auto;
   overflow: auto;
   padding: 40px;
   margin-bottom: 90px;
-  margin-bottom: 90px;
   background-color: #fff;
+  box-shadow: 2px 3px 8px 3px #ccc8c8;
 }
 .range-table table{
   width: 100%;
@@ -97,7 +97,7 @@
 }
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #fdbf14;
+  border-bottom: 2px solid #d3ac58;
 }
 .table-hover tbody tr:hover {
   background-color: rgba(241, 248, 251,0.7);
@@ -133,7 +133,10 @@
   padding: 10px 13px 11px 21px;
   margin-bottom: 10px;
 }
-
+.button {
+  border: 1px solid #3366ff;
+  padding: 5px;
+}
 
 @keyframes blink{
   0%{background-color: rgba(253, 191, 20, 0.3)}

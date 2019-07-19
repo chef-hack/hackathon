@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Cup from '../goal-cup.png';
 import { NavLink } from "react-router-dom";
+import Banner from "../banner-goal.png";
 
 class LeaderBoard extends Component {
     render() {
@@ -8,16 +9,17 @@ class LeaderBoard extends Component {
             <div className="bg-blue">
             <div className="container-wrap">
                 <div className="mb-5 mt-2">
-                    <NavLink exact activeClassName="active" to="/goal">
+                    <NavLink className="text-secondary text-small" exact activeClassName="active" to="/goal">
                         <span>goal</span>
                     </NavLink>
                     <span> / </span>
-                    <NavLink exact activeClassName="active" to="/leader">
+                    <NavLink className="text-secondary text-small" exact activeClassName="active" to="/leader">
                         <span>Leader board</span>
                     </NavLink>
                 </div>
                 <h1 className="mt-5">Leader board</h1>
-                <div className="mt-5 range-table">
+                <div><img className="img-fluid" src={Banner}/></div>
+                <div className="mt-3 range-table">
                     <table className="table table-hover">
                         <thead>
                         <tr>
