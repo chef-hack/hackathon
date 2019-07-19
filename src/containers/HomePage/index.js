@@ -143,7 +143,7 @@ class HomePage extends Component {
                         <div className="meal-header">Understand your meal</div>
                     </Row>
                     <Row>
-                        <div className="meal-header-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus ligula, lacinia in.</div>
+                        <div className="meal-header-detail">C.H.E.F. Intelligent offers employees self-paced, interactive learning courses..</div>
                     </Row>
                     <Row>
                         {
@@ -175,7 +175,7 @@ class HomePage extends Component {
                                 The best course dessert
                             </div>
                             <div className="dessert-detail">
-                                A beautifully simple system for tracking, prioritizing, and solving customer support tickets.
+                                An L&D program that’s customized to the preferences of each individual employee. This means that employees can access the L&D content
                             </div>
                         </Row>
                         <Row>

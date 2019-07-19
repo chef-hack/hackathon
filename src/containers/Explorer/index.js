@@ -114,13 +114,10 @@ class Explorer extends Component {
         selectedPrefType: "",
     };
 
-    componentDidMount() {
-        const {match: { params }} = this.props;
-        this.props.getCourseById(params.courseId);
-    };
 
     onChangePrefType = (prefType) => {
-        this.setState({selectedPrefType: prefType});
+        const updatedPrefType = (prefType === this.state.selectedPrefType)? '' : prefType;
+        this.setState({selectedPrefType: updatedPrefType});
     };
 
     filterCourseByPreference = () => {
@@ -132,11 +129,7 @@ class Explorer extends Component {
     };
 
     render() {
-        const { courseDetail, preferencesCards } = this.props;
-        const { nameValue, descriptionValue, linkValue } = this.state;
         const filteredCourse = this.filterCourseByPreference();
-
-
         return (
                 <div className="filter-part">
                     <Row>
@@ -169,7 +162,7 @@ class Explorer extends Component {
                                 The best course dessert
                             </div>
                             <div className="dessert-detail">
-                                A beautifully simple system for tracking, prioritizing, and solving customer support tickets.
+                                An L&D program that’s customized to the preferences of each individual employee. This means that employees can access the L&D content
                             </div>
                         </Row>
                         <Row>
@@ -201,11 +194,4 @@ const mapStateToProps = state => {
     };
 };
 
-const mapDispatchToProps = dispatch => ({
-    simpleAction: () => dispatch(simpleAction()),
-    fetchToDos: () => dispatch(fetchToDos()),
-    updateToDo: (updatedCourse) => dispatch(updateToDo(updatedCourse)),
-    getCourseById: (courseId) => dispatch(getCourseById(courseId)),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(Explorer);
+export default connect(null, null)(Explorer);
