@@ -28,6 +28,7 @@
 }
 .bg-blue {
   background-color: #f4f7ff;
+  padding-bottom:80px;
 }
 .nav-bar {
   box-shadow: 0px -1px 10px 4px #ccc8c8;
@@ -48,6 +49,9 @@
 }
 .search .form-inline input {
   width:400px;
+}
+.search-icon {
+  margin-left: -38px;
 }
 .goal-card {
   width: 150px;
@@ -81,6 +85,9 @@
   margin: 0 auto;
   overflow: auto;
   padding: 40px;
+  margin-bottom: 90px;
+  margin-bottom: 90px;
+  background-color: #fff;
 }
 .range-table table{
   width: 100%;
