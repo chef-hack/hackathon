@@ -5,7 +5,8 @@ import { simpleAction } from './actions/simpleAction';
 import Home from './containers/Home';
 import UpdateCourse from './containers/UpdateCourse';
 import About from './containers/About';
-import Profile from './containers/Profile';
+import Goal from './containers/Goal';
+import LeaderBoard from './containers/LeaderBoard';
 import logo from './logo.svg';
 import './App.css';
 import {fetchToDos} from "./actions/todoAction";
@@ -26,7 +27,8 @@ class App extends Component {
                         <Route exact path="/" component={Home}/>
                         <Route exact path="/course/:courseId" component={UpdateCourse}/>
                         <Route path="/about" component={About}/>
-                        <Route path="/profile" component={Profile}/>
+                        <Route path="/goal" component={Goal}/>
+                        <Route path="/leader" component={LeaderBoard}/>
                     </div>
                 </Router>
             </div>
