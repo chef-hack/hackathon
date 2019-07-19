@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import Avatar from 'react-avatar';
 import defaultAvatar from '../images/avatar.png';
+import goalTracker from '../images/goaltracker.png';
 import PrefList from '../components/PreferenceList';
 import PieChart from '../components/PieChart';
 
@@ -66,6 +67,7 @@ class Profile extends Component {
                   </div>
                   <div className="box">
                     <h3>Goal Tracker</h3>
+                    <div className="goal-tracker-img"><img src={goalTracker}/></div>
                   </div>
                 </div>
               </Col>

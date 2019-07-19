@@ -87,3 +87,6 @@ code {
   display: inline-block;
   padding-right: 5px;
 }
+.goal-tracker-img img {
+  width: 650px;
+}
