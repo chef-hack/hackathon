@@ -37,3 +37,12 @@
 .avatar {
   margin-top: 26px;
 }
+
+.course-dedcription .description {
+  height: 110px;
+  width: 277px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

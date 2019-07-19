@@ -6,11 +6,11 @@ import DessertCard from '../../components/DessertCard';
 import { connect } from 'react-redux';
 import _ from 'lodash';
 import { Button, Container, Row, Col} from 'react-bootstrap';
-import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
-import { simpleAction } from '../../actions/simpleAction';
-import {fetchToDos, addToDo, removeCourse, updateToDo, getCourseById} from "../../actions/todoAction";
-
+import Form from 'react-bootstrap/Form';
+import FormControl from 'react-bootstrap/FormControl';
 import './index.css';
+
+import Search from "../../search.png";
 
 const PrefTypes = {
     'DIGITAL' : 'DIGITAL',
@@ -78,6 +78,7 @@ const courseCards = [
         name: 'Management',
         imgUrl: 'https://b.imge.to/2019/07/19/5EBT2.png',
         prefType: PrefTypes.CULTURE,
+        description: 'Human resource management (HRM or HR) is the strategic approach to the effective management of people in a company or organization such that they help their business gain a competitive advantage.'
     },{
         id: 4,
         name: 'Helpful Skills',
@@ -92,6 +93,7 @@ const courseCards = [
         id: 6,
         name: 'Helpful Skills',
         imgUrl: 'https://b.imge.to/2019/07/19/5qQK6.png',
+        description: 'Design and style aren’t an exact science, as tastes differ and change as time goes on, but there are a few principles you can pick up that’ll make your work, home, or whatever needs an aesthetic boost looking better than average. If we’re talking traditional design, you’ll first want to learn the basics of type and layout. These are skills you can employ in your everyday work to make it look a lot more attractive. This may seem like a nearly-useless skill, because spreadsheets aren’t getting entered in any beauty contests,',
         prefType: PrefTypes.MANAGEMENT,
     },{
         id: 7,
@@ -112,6 +114,7 @@ class Explorer extends Component {
 
     state = {
         selectedPrefType: "",
+        searchWord: "",
     };
 
 
@@ -121,11 +124,26 @@ class Explorer extends Component {
     };
 
     filterCourseByPreference = () => {
-        const { selectedPrefType } = this.state;
-        if (!selectedPrefType) {
+        const { selectedPrefType, searchWord } = this.state;
+        let filteredCourse = courseCards;
+        if (!selectedPrefType && !searchWord) {
             return courseCards;
         }
-        return courseCards.filter(course => course.prefType === selectedPrefType);
+        if (selectedPrefType) {
+            filteredCourse = filteredCourse.filter(course => course.prefType === selectedPrefType);
+        }
+
+        if (searchWord) {
+            filteredCourse = filteredCourse.filter(course => course.name.toLowerCase().indexOf(searchWord.toLowerCase()) >= 0 );
+        }
+
+        return filteredCourse;
+    };
+
+    inputChange = (e , indexName) => {
+        let formValues = {};
+        formValues[indexName] = e.target.value;
+        this.setState(formValues);
     };
 
     render() {
@@ -150,11 +168,17 @@ class Explorer extends Component {
                         <Row>
                             <div className="header-lower-part">
                                 Cultural Trusted by the world’s most innovative businesses – big and small
+                                <Form inline className="search-name">
+                                    <FormControl value={this.state.searchWord}  onChange={(e)=>this.inputChange(e,'searchWord')} type="text" placeholder="Search" className="mr-sm-2 search-box" />
+                                    <div className="search-icon" variant="outline-info"><img src={Search} width="19px"/> </div>
+                                </Form>
                             </div>
                         </Row>
                         <Row>
                             {
-                                filteredCourse.map((card, i) => <Col md="6"><CourseCard imgUrl={card.imgUrl}/></Col>)
+                                _.size(filteredCourse) === 0 ?
+                                <div className="no-result">No Result Found!</div> :
+                                filteredCourse.map((card, i) => <Col md="6" key={i}><CourseCard description={card.description} name={card.name} imgUrl={card.imgUrl}/></Col>)
                             }
                         </Row>
                         <Row>

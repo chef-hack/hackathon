@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import AvatarCoach from '../../components/AvatarCoach';
-import Loader from 'react-loader-spinner'
 import { connect } from 'react-redux';
-import _ from 'lodash';
-import { Link } from 'react-router-dom'
-import { Button } from 'react-bootstrap';
-import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 import { simpleAction } from '../../actions/simpleAction';
 import {fetchToDos, addToDo, removeCourse, updateToDo} from "../../actions/todoAction";
 

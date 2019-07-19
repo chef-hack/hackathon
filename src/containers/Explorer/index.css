@@ -40,3 +40,19 @@
 .container {
   width: 1500px;
 }
+
+.search-name {
+  width: fit-content;
+  margin: auto;
+}
+
+.search-name .search-box {
+  margin: 15px;
+  width: 300px;
+}
+
+.no-result {
+  width: fit-content;
+  margin: auto;
+  font-weight: bold;
+}
