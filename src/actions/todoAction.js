@@ -1,7 +1,9 @@
-import {todosRef} from '../firebase';
+import {todosRef, prefRef} from '../firebase';
 const FETCH_TODOS = 'FETCH_TODOS';
 const IS_FETCHING_TODOS = 'IS_FETCHING_TODOS';
 const FETCH_COURSE_BY_ID = 'FETCH_COURSE_BY_ID';
+const IS_FETCHING_PREF = 'IS_FETCHING_PREF';
+const FETCH_PREF = 'FETCH_PREF';
 
 export const addToDo = newToDo => async dispatch => {
     todosRef.push().set(newToDo);
@@ -43,6 +45,23 @@ export const fetchToDos = () => async dispatch => {
         console.log(snapshot.val());
         dispatch({
             type: FETCH_TODOS,
+            payload: snapshot.val()
+        });
+    });
+};
+
+export const fetchPref = () => async dispatch => {
+    dispatch({
+        type: IS_FETCHING_PREF,
+        payload: {
+            isFetchingPref: true
+        }
+    });
+    prefRef.on("value", snapshot => {
+        console.log('snapshot.val()');
+        console.log(snapshot.val());
+        dispatch({
+            type: FETCH_PREF,
             payload: snapshot.val()
         });
     });

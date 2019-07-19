@@ -20,3 +20,70 @@ code {
   padding-left: 60px;
   padding-right: 60px;
 }
+
+/* Profile page */
+.profile-inner-top {
+  background-image: url("./images/bg_profile.png");
+  height: 400px;
+  background-size: cover;
+}
+.profile-inner-top .col-left,
+.profile-inner-top .col-right {
+  margin-top: 60px;
+}
+.profile-inner-top .col-left .box,
+.profile-inner-top .col-right .box {
+  margin-top: 20px;
+  background: #fdfdfd;
+  padding: 20px;
+  box-shadow: 0 6px 4px -5px #bababa;
+  border-radius: 3px;
+}
+.profile-inner-top .col-left {
+  color: #2B292D;
+}
+.profile-inner-top .col-left .user-profile-avatar {
+  position: relative;
+  top: -55px;
+}
+.profile-inner-top .details .name {
+  font-weight: 600;
+}
+.profile-inner-top .details .title {
+  font-size: 14px;
+}
+.profile-inner-top .details .description {
+  padding-top: 20px;
+}
+.profile-inner-bottom {
+  background: #eff0ed;
+  height: 400px;
+}
+.achievements {
+  padding-top: 30px;
+}
+.achievements .flex-grid {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  padding-top: 10px;
+}
+.achievements .flex-grid .col {
+  width: 32%;
+}
+.achievements .flex-grid .col span {
+  display: block;
+}
+.achievements span.label {
+  font-size: 15px;
+}
+.achievements span.value {
+  color: #329065;
+  font-size: 50px;
+  font-weight: 600;
+}
+.interesting .pref-list h5 {
+  display: inline-block;
+  padding-right: 5px;
+}
